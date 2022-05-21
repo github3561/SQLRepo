@@ -1,0 +1,13 @@
+CREATE TABLE [dbo].[EngineList](
+	[URL] [varchar](100) NOT NULL,
+	[Disabled] [bit] NOT NULL,
+	[EngineVersionTypeID] [int] NOT NULL,
+	[MinPriority] [smallint] NOT NULL,
+	[MaxPriority] [smallint] NULL,
+	[Comment] [varchar](max) NOT NULL,
+ CONSTRAINT [PK_EngineList_URL] PRIMARY KEY CLUSTERED 
+(
+	[URL] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
